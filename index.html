@@ -7,26 +7,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    html {
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #111;
+      background: linear-gradient(120deg, #111, #333);
       color: #fff;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     header {
-      background-color: #222;
+      background: #000;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
@@ -36,165 +31,143 @@
       z-index: 1000;
     }
 
+    header h1 {
+      color: #facc15;
+      font-weight: 700;
+    }
+
     nav a {
-      margin-left: 20px;
+      margin-left: 25px;
       text-decoration: none;
       color: #fff;
-      font-weight: 600;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #f57c00;
+      color: #facc15;
     }
 
     .hero {
-      flex: 1;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 60px 40px;
-      gap: 40px;
+      align-items: center;
+      padding: 80px 60px;
+      flex-wrap: wrap;
     }
 
     .hero-text {
       max-width: 600px;
     }
 
-    .hero h1 {
-      font-size: 2.8rem;
-      color: #f57c00;
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #fff;
     }
 
-    .hero h1 span {
-      color: #fff;
+    .hero h2 span {
+      color: #facc15;
     }
 
     .hero p {
-      margin: 15px 0 25px;
-      line-height: 1.6;
-      font-size: 1rem;
+      margin-top: 15px;
+      color: #ccc;
     }
 
-    .hero-buttons a {
-      display: inline-block;
-      margin-right: 15px;
-      padding: 12px 20px;
-      background-color: #f57c00;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .hero-buttons a:hover {
-      background-color: #fff;
-      color: #111;
-    }
-
-    .social-icons {
+    .hero-buttons {
       margin-top: 30px;
     }
 
-    .social-icons a {
-      display: inline-block;
+    .hero-buttons a {
+      padding: 12px 24px;
       margin-right: 10px;
-      font-size: 1.2rem;
-      color: #f57c00;
+      background: #facc15;
+      color: #000;
       text-decoration: none;
-    }
-
-    .hero-img {
-      max-width: 400px;
+      border-radius: 8px;
+      font-weight: 600;
     }
 
     section {
       padding: 60px 40px;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #f57c00;
+    h3 {
+      color: #facc15;
+      margin-bottom: 15px;
     }
 
-    .projects, .skills, .about {
+    .about, .skills, .projects {
       max-width: 960px;
       margin: auto;
     }
 
-    .project-item, .skill-item {
-      margin-bottom: 20px;
+    ul li {
+      margin-bottom: 10px;
     }
 
     footer {
+      background: #000;
       text-align: center;
+      color: #999;
       padding: 20px;
-      font-size: 0.9rem;
-      background-color: #222;
-      color: #bbb;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Portofolio</h2>
+    <h1>Portofolio</h1>
     <nav>
-      <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="tel:+6281229427954">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Hi, I'm <span>Emi Fadilah Izzati</span></h1>
-      <p>Mahasiswa Teknik yang tertarik dalam pengembangan aplikasi mobile dan web. Aktif dalam berbagai proyek digital dan pembelajaran mandiri.</p>
+      <h2>Hi, I'm <span>Emi Fadilah Izzati</span></h2>
+      <p>Mahasiswa Teknik dan Sains yang passionate dalam pengembangan web dan aplikasi mobile. Aktif mengikuti proyek-proyek pribadi serta memiliki pengalaman organisasi dan kolaborasi tim.</p>
       <div class="hero-buttons">
-        <a href="#projects">Lihat Proyek</a>
-        <a href="mailto:emi.izz@email.com">Hubungi Saya</a>
-      </div>
-      <div class="social-icons">
-        <a href="https://github.com/emifadilah" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/emifadilah" target="_blank">LinkedIn</a>
-        <a href="tel:+6281229427954">Telepon</a>
+        <a href="#projects">View My Work</a>
+        <a href="mailto:emi.izz@email.com">Contact Me</a>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="https://via.placeholder.com/400x400?text=Foto+Emi" alt="Hero Image" style="width:100%; border-radius: 12px;">
-    </div>
+    <img src="https://via.placeholder.com/300x300?text=Emi" alt="Foto Emi" style="border-radius: 50%; margin-top: 30px;">
   </section>
 
   <section class="about" id="about">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah mahasiswa aktif di bidang teknik dan sains, dengan fokus pada pengembangan aplikasi Android menggunakan Kotlin, serta pengalaman membuat website menggunakan HTML dan CSS. Saya senang belajar hal baru dan bekerja secara kolaboratif dalam tim.</p>
+    <h3>Tentang Saya</h3>
+    <p>Saya adalah mahasiswa aktif yang fokus pada pengembangan software, khususnya aplikasi Android menggunakan Kotlin dan pengembangan web statis menggunakan HTML dan CSS. Saya berkomitmen terhadap pembelajaran berkelanjutan dan memiliki semangat tinggi dalam teknologi.</p>
   </section>
 
   <section class="skills" id="skills">
-    <h2>Keterampilan</h2>
+    <h3>Keterampilan</h3>
     <ul>
-      <li class="skill-item">Kotlin (Android Development)</li>
-      <li class="skill-item">HTML & CSS (Web Development)</li>
-      <li class="skill-item">Git & GitHub</li>
-      <li class="skill-item">Android Studio</li>
-      <li class="skill-item">Visual Studio Code</li>
+      <li>Kotlin (Mobile Development)</li>
+      <li>HTML & CSS (Frontend)</li>
+      <li>Android Studio</li>
+      <li>Git & GitHub</li>
+      <li>Visual Studio Code</li>
     </ul>
   </section>
 
   <section class="projects" id="projects">
-    <h2>Proyek</h2>
-    <div class="project-item">
-      <h3>Aplikasi Pencatat Harian</h3>
-      <p>Aplikasi Android untuk mencatat kegiatan harian dengan fitur CRUD.</p>
-      <a href="https://github.com/emifadilah/Aplikasi-Pencatat-Harian" target="_blank">Lihat di GitHub</a>
-    </div>
-    <div class="project-item">
-      <h3>Website Portofolio HTML</h3>
-      <p>Website statis sederhana menggunakan HTML dan CSS untuk menampilkan portofolio pribadi.</p>
-      <a href="https://github.com/emifadilah/Website-Portofolio-HTML" target="_blank">Lihat di GitHub</a>
-    </div>
+    <h3>Proyek</h3>
+    <ul>
+      <li>
+        <strong>Aplikasi Pencatat Harian</strong><br>
+        Aplikasi Android untuk mencatat aktivitas harian dengan fitur CRUD.<br>
+        <a href="https://github.com/emifadilah/Aplikasi-Pencatat-Harian" style="color:#facc15">Lihat di GitHub</a>
+      </li>
+      <li>
+        <strong>Website Portofolio HTML</strong><br>
+        Website sederhana untuk menampilkan proyek dan keterampilan pribadi.<br>
+        <a href="https://github.com/emifadilah/Website-Portofolio-HTML" style="color:#facc15">Lihat di GitHub</a>
+      </li>
+    </ul>
   </section>
 
   <footer>
