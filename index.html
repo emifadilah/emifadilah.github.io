@@ -4,161 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio | Emi Fadilah Izzati</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
-    }
-    header {
-      background: #1e293b;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      color: #facc15;
-    }
-    nav a {
-      color: #f8fafc;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #facc15;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px 40px;
-      gap: 40px;
-    }
-    .hero-text {
-      max-width: 600px;
-    }
-    .hero-text h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #facc15;
-    }
-    .hero-text p {
-      margin-bottom: 25px;
-      color: #cbd5e1;
-    }
-    .hero-buttons a {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #facc15;
-      color: #0f172a;
-      border-radius: 8px;
-      margin-right: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .hero-buttons a:hover {
-      background: #eab308;
-    }
-    img.hero-img {
-      width: 300px;
-      border-radius: 50%;
-    }
-    section {
-      padding: 60px 40px;
-    }
-    h3 {
-      font-size: 1.5rem;
-      color: #facc15;
-      margin-bottom: 15px;
-    }
-    .about, .skills, .projects {
-      max-width: 960px;
-      margin: auto;
-    }
-    ul li {
-      margin-bottom: 10px;
-      color: #cbd5e1;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e293b;
-      color: #94a3b8;
-    }
-  </style>
 </head>
 <body>
-  <header data-aos="fade-down">
-    <h1>Emi Fadilah</h1>
+  <header>
+    <h1>Portofolio</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="tel:+6281229427954">Contact</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero" data-aos="fade-up">
-    <div class="hero-text">
-      <h2>Hi, I'm Emi Fadilah Izzati</h2>
-      <p>Mahasiswa Teknik & Sains yang aktif dalam pengembangan aplikasi Android dan web. Saya antusias belajar hal baru dan senang bekerja dalam tim.</p>
-      <div class="hero-buttons">
-        <a href="#projects">Lihat Proyek</a>
-        <a href="mailto:emi.izz@email.com">Hubungi Saya</a>
-      </div>
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="intro">
+      <h2>Hi, I'm <span>Emi Fadilah Izzati</span></h2>
+      <p>Mahasiswa Teknik & Sains, fokus pada pengembangan aplikasi mobile dan web.</p>
+      <img src="emi.jpg" alt="Foto Emi" />
     </div>
-    <img src="emi.jpg" alt="Foto Emi" class="hero-img" data-aos="zoom-in">
   </section>
 
-  <section class="about" id="about" data-aos="fade-right">
-    <h3>Tentang Saya</h3>
-    <p>Saya adalah mahasiswa dengan minat di bidang teknologi, khususnya mobile dan web development. Saya memiliki pengalaman dalam menggunakan Android Studio, Kotlin, HTML, CSS, serta terbiasa dengan kontrol versi menggunakan Git & GitHub.</p>
+  <section id="about" data-aos="fade-up">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah mahasiswa yang aktif dalam pengembangan aplikasi mobile dengan Kotlin dan web menggunakan HTML/CSS/JavaScript.</p>
   </section>
 
-  <section class="skills" id="skills" data-aos="fade-left">
-    <h3>Keterampilan</h3>
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills & Tools</h2>
     <ul>
-      <li>Kotlin (Pengembangan Aplikasi Android)</li>
-      <li>HTML & CSS (Web Frontend)</li>
-      <li>Android Studio & VS Code</li>
-      <li>Git & GitHub</li>
+      <li>Kotlin</li>
+      <li>HTML, CSS</li>
+      <li>Android Studio</li>
+      <li>GitHub</li>
     </ul>
   </section>
 
-  <section class="projects" id="projects" data-aos="fade-up">
-    <h3>Proyek</h3>
-    <ul>
-      <li>
-        <strong>Aplikasi Pencatat Harian</strong><br>
-        Aplikasi Android dengan fitur CRUD untuk mencatat kegiatan harian.<br>
-        <a href="https://github.com/emifadilah/Aplikasi-Pencatat-Harian" target="_blank" style="color:#facc15;">Lihat di GitHub</a>
-      </li>
-      <li>
-        <strong>Website Portofolio HTML</strong><br>
-        Website sederhana untuk menampilkan proyek dan keahlian.<br>
-        <a href="https://github.com/emifadilah/Website-Portofolio-HTML" target="_blank" style="color:#facc15;">Lihat di GitHub</a>
-      </li>
-    </ul>
+  <section id="projects" data-aos="fade-up">
+    <h2>Proyek</h2>
+    <div class="card">
+      <h3>Aplikasi Catatan Harian</h3>
+      <p>Aplikasi Android menggunakan Kotlin untuk mencatat aktivitas harian.</p>
+    </div>
+    <div class="card">
+      <h3>Website Portofolio</h3>
+      <p>Website statis dengan HTML dan CSS untuk menampilkan karya pribadi.</p>
+    </div>
   </section>
 
-  <footer data-aos="fade-in">
-    &copy; 2025 Emi Fadilah Izzati
-  </footer>
+  <section id="contact" data-aos="fade-up">
+    <h2>Kontak</h2>
+    <p>Email: emifadilahizzati@email.com</p>
+    <p>HP: 081229427954</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/emifadilah" target="_blank">emifadilah</a></p>
+  </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init();
   </script>
 </body>
 </html>
