@@ -4,121 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio | Emi Fadilah Izzati</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #111, #333);
-      color: #fff;
-      min-height: 100vh;
+      background: #0f172a;
+      color: #f8fafc;
     }
-
     header {
-      background: #000;
+      background: #1e293b;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 999;
     }
-
     header h1 {
+      font-size: 1.8rem;
       color: #facc15;
-      font-weight: 700;
     }
-
     nav a {
-      margin-left: 25px;
+      color: #f8fafc;
+      margin-left: 20px;
       text-decoration: none;
-      color: #fff;
       font-weight: 500;
-      transition: 0.3s;
     }
-
     nav a:hover {
       color: #facc15;
     }
-
     .hero {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 80px 60px;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 40px;
+      gap: 40px;
     }
-
     .hero-text {
       max-width: 600px;
     }
-
-    .hero h2 {
+    .hero-text h2 {
       font-size: 2.5rem;
-      color: #fff;
-    }
-
-    .hero h2 span {
+      margin-bottom: 20px;
       color: #facc15;
     }
-
-    .hero p {
-      margin-top: 15px;
-      color: #ccc;
+    .hero-text p {
+      margin-bottom: 25px;
+      color: #cbd5e1;
     }
-
-    .hero-buttons {
-      margin-top: 30px;
-    }
-
     .hero-buttons a {
+      display: inline-block;
       padding: 12px 24px;
-      margin-right: 10px;
       background: #facc15;
-      color: #000;
-      text-decoration: none;
+      color: #0f172a;
       border-radius: 8px;
+      margin-right: 10px;
+      text-decoration: none;
       font-weight: 600;
+      transition: background 0.3s;
     }
-
+    .hero-buttons a:hover {
+      background: #eab308;
+    }
+    img.hero-img {
+      width: 300px;
+      border-radius: 50%;
+    }
     section {
       padding: 60px 40px;
     }
-
     h3 {
+      font-size: 1.5rem;
       color: #facc15;
       margin-bottom: 15px;
     }
-
     .about, .skills, .projects {
       max-width: 960px;
       margin: auto;
     }
-
     ul li {
       margin-bottom: 10px;
+      color: #cbd5e1;
     }
-
     footer {
-      background: #000;
       text-align: center;
-      color: #999;
       padding: 20px;
-      margin-top: 40px;
+      background: #1e293b;
+      color: #94a3b8;
     }
   </style>
 </head>
 <body>
   <header data-aos="fade-down">
-    <h1>Portofolio</h1>
+    <h1>Emi Fadilah</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -129,29 +111,28 @@
 
   <section class="hero" data-aos="fade-up">
     <div class="hero-text">
-      <h2>Hi, I'm <span>Emi Fadilah Izzati</span></h2>
-      <p>Mahasiswa Teknik dan Sains yang passionate dalam pengembangan web dan aplikasi mobile. Aktif mengikuti proyek-proyek pribadi serta memiliki pengalaman organisasi dan kolaborasi tim.</p>
+      <h2>Hi, I'm Emi Fadilah Izzati</h2>
+      <p>Mahasiswa Teknik & Sains yang aktif dalam pengembangan aplikasi Android dan web. Saya antusias belajar hal baru dan senang bekerja dalam tim.</p>
       <div class="hero-buttons">
-        <a href="#projects">View My Work</a>
-        <a href="mailto:emi.izz@email.com">Contact Me</a>
+        <a href="#projects">Lihat Proyek</a>
+        <a href="mailto:emi.izz@email.com">Hubungi Saya</a>
       </div>
     </div>
-    <img src="emi.jpg" alt="Foto Emi" style="border-radius: 50%; width: 300px;" data-aos="zoom-in">
+    <img src="emi.jpg" alt="Foto Emi" class="hero-img" data-aos="zoom-in">
   </section>
 
   <section class="about" id="about" data-aos="fade-right">
     <h3>Tentang Saya</h3>
-    <p>Saya adalah mahasiswa aktif yang fokus pada pengembangan software, khususnya aplikasi Android menggunakan Kotlin dan pengembangan web statis menggunakan HTML dan CSS. Saya berkomitmen terhadap pembelajaran berkelanjutan dan memiliki semangat tinggi dalam teknologi.</p>
+    <p>Saya adalah mahasiswa dengan minat di bidang teknologi, khususnya mobile dan web development. Saya memiliki pengalaman dalam menggunakan Android Studio, Kotlin, HTML, CSS, serta terbiasa dengan kontrol versi menggunakan Git & GitHub.</p>
   </section>
 
   <section class="skills" id="skills" data-aos="fade-left">
     <h3>Keterampilan</h3>
     <ul>
-      <li>Kotlin (Mobile Development)</li>
-      <li>HTML & CSS (Frontend)</li>
-      <li>Android Studio</li>
+      <li>Kotlin (Pengembangan Aplikasi Android)</li>
+      <li>HTML & CSS (Web Frontend)</li>
+      <li>Android Studio & VS Code</li>
       <li>Git & GitHub</li>
-      <li>Visual Studio Code</li>
     </ul>
   </section>
 
@@ -160,13 +141,13 @@
     <ul>
       <li>
         <strong>Aplikasi Pencatat Harian</strong><br>
-        Aplikasi Android untuk mencatat aktivitas harian dengan fitur CRUD.<br>
-        <a href="https://github.com/emifadilah/Aplikasi-Pencatat-Harian" style="color:#facc15">Lihat di GitHub</a>
+        Aplikasi Android dengan fitur CRUD untuk mencatat kegiatan harian.<br>
+        <a href="https://github.com/emifadilah/Aplikasi-Pencatat-Harian" target="_blank" style="color:#facc15;">Lihat di GitHub</a>
       </li>
       <li>
         <strong>Website Portofolio HTML</strong><br>
-        Website sederhana untuk menampilkan proyek dan keterampilan pribadi.<br>
-        <a href="https://github.com/emifadilah/Website-Portofolio-HTML" style="color:#facc15">Lihat di GitHub</a>
+        Website sederhana untuk menampilkan proyek dan keahlian.<br>
+        <a href="https://github.com/emifadilah/Website-Portofolio-HTML" target="_blank" style="color:#facc15;">Lihat di GitHub</a>
       </li>
     </ul>
   </section>
@@ -177,10 +158,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
