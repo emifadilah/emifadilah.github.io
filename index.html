@@ -1,71 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio | Emi Fadilah Izzati</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header>
-    <h1>Portofolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Portofolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" class="hero" data-aos="fade-up">
-    <div class="intro">
-      <h2>Hi, I'm <span>Emi Fadilah Izzati</span></h2>
-      <p>Mahasiswa Teknik & Sains, fokus pada pengembangan aplikasi mobile dan web.</p>
-      <img src="emi.jpg" alt="Foto Emi" />
+  <section id="home" class="hero-section" data-aos="fade-up">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Emi Fadilah</span></h2>
+        <p>Teknik Informatika Student</p>
+        <p>Mahasiswa semester 4 Teknik Informatika yang passionate dalam pengembangan web dan mobile. Aktif dalam organisasi kampus dan memiliki pengalaman dalam dokumentasi serta media sosial.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-yellow">View My Work</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="ri-github-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="emi.jpg" alt="Emi Fadilah">
+      </div>
     </div>
   </section>
 
-  <section id="about" data-aos="fade-up">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah mahasiswa yang aktif dalam pengembangan aplikasi mobile dengan Kotlin dan web menggunakan HTML/CSS/JavaScript.</p>
-  </section>
-
-  <section id="skills" data-aos="fade-up">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li>Kotlin</li>
-      <li>HTML, CSS</li>
-      <li>Android Studio</li>
-      <li>GitHub</li>
-    </ul>
-  </section>
-
-  <section id="projects" data-aos="fade-up">
-    <h2>Proyek</h2>
-    <div class="card">
-      <h3>Aplikasi Catatan Harian</h3>
-      <p>Aplikasi Android menggunakan Kotlin untuk mencatat aktivitas harian.</p>
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>PHP</li>
+            <li>Kotlin</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Database & Backend</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Others</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Dokumentasi</li>
+            <li>Organisasi</li>
+            <li>Social Media</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>Website Portofolio</h3>
-      <p>Website statis dengan HTML dan CSS untuk menampilkan karya pribadi.</p>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Proyek Akademik</h2>
+      <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Aplikasi Ecommerce</h3>
+          <p>Membuat aplikasi ecommerce modern menggunakan PHP.</p>
+          <span class="tag">PHP</span>
+        </div>
+        <div class="project-card">
+          <h3>Aplikasi Web Sipemasd</h3>
+          <p>Membuat aplikasi web Sipemasd menggunakan React, MongoDB, dan Express.</p>
+          <span class="tag">React</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Express</span>
+        </div>
+        <div class="project-card">
+          <h3>Aplikasi Mobile Ecommerce</h3>
+          <p>Membuat aplikasi mobile ecommerce menggunakan Kotlin.</p>
+          <span class="tag">Kotlin</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Kontak</h2>
-    <p>Email: emifadilahizzati@email.com</p>
-    <p>HP: 081229427954</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/emifadilah" target="_blank">emifadilah</a></p>
+  <section id="contact" class="section contact-section" data-aos="fade-up">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Hubungi Saya</h2>
+        <p>Mari berkolaborasi dalam proyek menarik</p>
+        <p><i class="ri-mail-line"></i> emifadilahizzati@email.com</p>
+        <p><i class="ri-phone-line"></i> 0812 2942 7954</p>
+        <p><i class="ri-map-pin-line"></i> Indonesia</p>
+        <p><i class="ri-building-line"></i> Universitas Muhammadiyah</p>
+        <div class="social-icons">
+          <a href="#"><i class="ri-github-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-yellow">Send Message</button>
+      </form>
+    </div>
   </section>
 
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Emi Fadilah Izzati</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ once: true });
   </script>
 </body>
+
 </html>
