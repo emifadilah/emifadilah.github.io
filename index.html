@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio | Emi Fadilah Izzati</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -116,7 +117,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1>Portofolio</h1>
     <nav>
       <a href="#about">About</a>
@@ -126,7 +127,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <div class="hero-text">
       <h2>Hi, I'm <span>Emi Fadilah Izzati</span></h2>
       <p>Mahasiswa Teknik dan Sains yang passionate dalam pengembangan web dan aplikasi mobile. Aktif mengikuti proyek-proyek pribadi serta memiliki pengalaman organisasi dan kolaborasi tim.</p>
@@ -135,15 +136,15 @@
         <a href="mailto:emi.izz@email.com">Contact Me</a>
       </div>
     </div>
-    <img src="https://via.placeholder.com/300x300?text=Emi" alt="Foto Emi" style="border-radius: 50%; margin-top: 30px;">
+    <img src="https://via.placeholder.com/300x300?text=Emi" alt="Foto Emi" style="border-radius: 50%; margin-top: 30px;" data-aos="zoom-in">
   </section>
 
-  <section class="about" id="about">
+  <section class="about" id="about" data-aos="fade-right">
     <h3>Tentang Saya</h3>
     <p>Saya adalah mahasiswa aktif yang fokus pada pengembangan software, khususnya aplikasi Android menggunakan Kotlin dan pengembangan web statis menggunakan HTML dan CSS. Saya berkomitmen terhadap pembelajaran berkelanjutan dan memiliki semangat tinggi dalam teknologi.</p>
   </section>
 
-  <section class="skills" id="skills">
+  <section class="skills" id="skills" data-aos="fade-left">
     <h3>Keterampilan</h3>
     <ul>
       <li>Kotlin (Mobile Development)</li>
@@ -154,7 +155,7 @@
     </ul>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="projects" id="projects" data-aos="fade-up">
     <h3>Proyek</h3>
     <ul>
       <li>
@@ -170,8 +171,16 @@
     </ul>
   </section>
 
-  <footer>
+  <footer data-aos="fade-in">
     &copy; 2025 Emi Fadilah Izzati
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
